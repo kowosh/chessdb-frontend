@@ -4,7 +4,6 @@ const port = 80
 
 app.use('/dist', express.static('dist'))
 
-
 app.get('/*', (req, res) => res.send(
     '<!DOCTYPE html>' +
     '<html lang="en">' +
@@ -22,4 +21,4 @@ app.get('/*', (req, res) => res.send(
     '</html>'
 ));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`ChessDB frontend listening on port ${port}!`))
